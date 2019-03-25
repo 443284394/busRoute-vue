@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+  min-height:1054px;
+  overflow: auto;
+}
+.pic-change {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.bg1 {
+  background: url(../assets/image/bus.jpg);
+  background-size: cover;
+  opacity: 0.3;
+}
+.wrapper {
+  position: absolute;
+  width: 300px;
+  height: 520px;
+  top: 50%;
+  left: 50%;
+  margin-left: 300px;
+  margin-top: -260px;
+  z-index: 2;
+}
+.right {
+  position: relative;
+  margin: 0;
+}
+.loginTitle {
+  display: block;
+  padding: 84px 30px 45px;
+  height: 160px;
+  background: url(../assets/image/icon_welcome_xuzhou.png) no-repeat top center;
+  background-size: 260px 181px;
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  color: #7D8FC4;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+}
+.uname-wrap {
+  height: 34px;
+  padding: 0px 0px 7px 50px;
+  margin-bottom: 35px;
+  background: url(../assets/image/icon_yonghu.png) no-repeat left top;
+  background-size: 30px 30px;
+  border-bottom: 1px solid #3B4F89;
+}
+.uname{
+  height:30px;
+}
+.uname:-ms-input-placeholder{
+  font-size: 12px;
+  line-height: 30px;
+}
+.upwd-wrap {
+  height: 34px;
+  padding: 0px 0px 7px 50px;
+  margin-bottom: 35px;
+  background: url(../assets/image/icon_mima.png) no-repeat left top;
+  background-size: 30px 30px;
+  border-bottom: 1px solid #3B4F89;
+}
+.upwd{
+  height:30px;
+}
+.upwd:-ms-input-placeholder{
+  font-size: 12px;
+  line-height: 30px;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 0px 10px;
+  font-size: 16px;
+  color: gray;
+  letter-spacing: 0;
+  //line-height: 1px;
+  border: none;
+  background: none;
+  outline: none;
+  &:focus {
+    transition: all 450ms ease-out;
+  }
+}
+.loginBtn {
+  display: block;
+  padding: 0;
+  width: 116px;
+  margin-top: 40px;
+  background: #4E6FCE;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42px;
+  outline: none;
+  cursor: pointer;
+  float: right;
+}
+.resetBtn{
+  display: block;
+  padding: 0;
+  margin-top: 40px;
+  width: 116px;
+  border: 1px solid #4E6FCE;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 16px;
+  color: #6A8EF6;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42px;
+  outline: none;
+  cursor: pointer;
+  float: left;
+}
+.drag {
+  position: relative;
+  background: #3D4E80;
+  border-radius: 4px;
+  height: 42px;
+  font-size: 14px;
+  color: #6588EA;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42px;
+  text-align: center;
+}
+.handler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 67px;
+  height: 42px;
+  background: #4E6FCE;
+  border-radius: 4px;
+  cursor: move;
+}
+.handler_bg {
+  background: url(../assets/image/icon_anquan.png) no-repeat center, #4E6FCE;;
+  background-size: 40% auto;
+}
+
+.handler_ok_bg {
+  background: url(../assets/image/icon_yancheng.png) no-repeat center, #249D77;
+  background-size:  40% auto;
+}
+.drag_bg {
+  background: #3D4E80;
+  border-radius: 4px;
+  width: 0;
+}
+
+@-webkit-keyframes slidetounlock {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.drag_text {
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+.drag_success {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  color: #fff;
+  background: #69B9A0;
+  border-radius: 4px;
+}
